@@ -1,0 +1,6 @@
+# Whitelist — só publicar o site (html + assets)
+/*
+!*.html
+!assets/
+!.gitignore
+**/.DS_Store
