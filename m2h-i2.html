@@ -330,8 +330,8 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 .ticket li svg{position:absolute;left:0;top:.2em}
 .ticket li.star{color:var(--gold-soft);font-weight:700}
 .ticket .btn{width:100%;margin-top:auto}
-.ticket.vip{border:2px solid rgba(246,166,35,.6);box-shadow:0 0 0 1px rgba(246,166,35,.2),0 34px 80px -30px rgba(246,166,35,.35);overflow:hidden}
-.ticket.vip::before{content:"";position:absolute;top:-35%;left:50%;transform:translateX(-50%);width:130%;height:75%;background:radial-gradient(closest-side,rgba(246,166,35,.2),transparent);pointer-events:none}
+.ticket.vip{border:2px solid rgba(246,166,35,.6);box-shadow:0 0 0 1px rgba(246,166,35,.2),0 34px 80px -30px rgba(246,166,35,.35)}
+.ticket.vip::before{content:"";position:absolute;inset:0;border-radius:24px;background:radial-gradient(120% 70% at 50% -18%,rgba(246,166,35,.18),transparent 62%);pointer-events:none}
 .ticket .tbadge{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);font-family:'JetBrains Mono';font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3a2400;background:linear-gradient(135deg,var(--gold),var(--gold-soft));padding:.55em 1.3em;border-radius:999px;white-space:nowrap;box-shadow:0 10px 26px -10px rgba(246,166,35,.8)}
 .ticket .vip-item{margin:.4em 0 .2em;padding:14px;border:1px dashed rgba(246,166,35,.55);border-radius:14px;background:rgba(246,166,35,.08)}
 .ticket .vip-item b{color:var(--gold-soft)}
