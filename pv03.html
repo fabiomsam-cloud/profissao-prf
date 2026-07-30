@@ -317,6 +317,8 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 .sort-card h3{font-size:1.22rem;margin-bottom:.3em}
 .sort-card p{color:var(--muted);font-size:.94rem}
 
+/* âncoras não escondem sob o menu fixo */
+section[id],div[id="vitrine"]{scroll-margin-top:80px}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -330,7 +332,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#" class="brand"><img class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></a>
+    <a href="#" class="brand"><img width="640" height="257" class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></a>
     <nav class="nav-links">
       <a href="#programacao">Programação</a>
       <a href="#kit">O que você recebe</a>
@@ -343,9 +345,9 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"><img src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
+  <div class="hero-bg"><img width="1920" height="1071" src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
   <div class="wrap hero-inner">
-    <img class="hero-logo reveal" src="assets/logo-stack.png" alt="Profissão PRF — brasão da Polícia Rodoviária Federal">
+    <img width="460" height="416" class="hero-logo reveal" src="assets/logo-stack.png" alt="Profissão PRF — brasão da Polícia Rodoviária Federal">
     <span class="eyebrow reveal">Evento online ao vivo · 2 noites</span>
     <h1 class="reveal d1">Trabalha o dia inteiro e acha que <span class="hl">não dá tempo</span> de estudar pra PRF?</h1>
     <p class="lead reveal d2">A barreira nunca foi a sua capacidade — é a falta de método. Em <b>2 noites ao vivo</b>, o Delegado Fábio Silva mostra como aprovar na PRF estudando <b>cerca de 2 horas por dia</b>, com o mesmo método que ele criou quando também trabalhava em tempo integral. Foco só no que cai na prova, sem culpa e sem burnout.</p>
@@ -370,7 +372,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 
 <!-- STAT STRIP -->
 <section class="opp">
-  <div class="opp-bg"><img src="assets/viatura.jpg" alt=""></div>
+  <div class="opp-bg"><img width="1100" height="471" src="assets/viatura.jpg" alt=""></div>
   <div class="wrap">
     <div class="opp-grid">
       <div class="opp-item reveal"><div class="n">+5.223</div><small>alunos aprovados em<br>concursos por todo o Brasil</small></div>
@@ -436,11 +438,11 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
       <p>Você entra para 2 noites ao vivo e ainda leva um arsenal de materiais para começar agora.</p>
     </div>
     <div class="ent-wall reveal d1">
-      <div class="ent-card"><div class="ph"><img src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div><b>Raio-X PRF</b><span class="val">R$ 170</span></div>
-      <div class="ent-card"><div class="ph"><img src="assets/ent-arsenal.jpg" alt="Capa do Arsenal Elite Federal" loading="lazy"></div><b>Arsenal Elite Federal</b><span class="val">R$ 100</span></div>
-      <div class="ent-card"><div class="ph"><img src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div><b>Manual de Preparação PRF</b><span class="val">R$ 120</span></div>
-      <div class="ent-card"><div class="ph"><img src="assets/ent-planilha.png" alt="Planilha de Controle de Estudos PRF" loading="lazy"></div><b>Planilha de Controle de Estudos</b><span class="val">R$ 150</span></div>
-      <div class="ent-card"><div class="ph"><img src="assets/ent-taf.jpg" alt="Capa do Guia Prático do TAF-PRF" loading="lazy"></div><b>Guia Prático do TAF</b><span class="val">R$ 100</span></div>
+      <div class="ent-card"><div class="ph"><img width="773" height="1100" src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div><b>Raio-X PRF</b><span class="val">R$ 170</span></div>
+      <div class="ent-card"><div class="ph"><img width="704" height="900" src="assets/ent-arsenal.jpg" alt="Capa do Arsenal Elite Federal" loading="lazy"></div><b>Arsenal Elite Federal</b><span class="val">R$ 100</span></div>
+      <div class="ent-card"><div class="ph"><img width="656" height="900" src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div><b>Manual de Preparação PRF</b><span class="val">R$ 120</span></div>
+      <div class="ent-card"><div class="ph"><img width="1000" height="776" src="assets/ent-planilha.png" alt="Planilha de Controle de Estudos PRF" loading="lazy"></div><b>Planilha de Controle de Estudos</b><span class="val">R$ 150</span></div>
+      <div class="ent-card"><div class="ph"><img width="756" height="1000" src="assets/ent-taf.jpg" alt="Capa do Guia Prático do TAF-PRF" loading="lazy"></div><b>Guia Prático do TAF</b><span class="val">R$ 100</span></div>
     </div>
     <div class="kit-sub">+ a experiência ao vivo incluída</div>
     <div class="feat-grid">
@@ -481,7 +483,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 <section class="sec bonus">
   <div class="wrap">
     <div class="auth-banner reveal">
-      <img src="assets/fabio-palco.jpg" alt="Auditório lotado em uma edição presencial do Profissão PRF">
+      <img width="1700" height="1133" src="assets/fabio-palco.jpg" alt="Auditório lotado em uma edição presencial do Profissão PRF">
       <div class="ov">
         <span class="eyebrow">Quem vai te guiar</span>
         <b>Delegado Fábio Silva</b>
@@ -497,9 +499,9 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
       </div>
     </div>
     <div class="gallery reveal d1">
-      <div class="gphoto g-main"><img src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
-      <div class="gphoto g-sm"><img src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na Universidade Corporativa da PRF"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
-      <div class="gphoto g-sm"><img src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF"><div class="cap">Mais um sonho realizado</div></div>
+      <div class="gphoto g-main"><img width="1400" height="1400" src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
+      <div class="gphoto g-sm"><img width="898" height="1200" src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na Universidade Corporativa da PRF"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
+      <div class="gphoto g-sm"><img width="903" height="1200" src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF"><div class="cap">Mais um sonho realizado</div></div>
     </div>
   </div>
 </section>
@@ -558,7 +560,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 
 <!-- COUNTDOWN + FINAL -->
 <section class="final">
-  <div class="final-bg"><img src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
+  <div class="final-bg"><img width="1344" height="768" src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
   <div class="wrap final-inner reveal">
     <span class="eyebrow red">O evento começa em</span>
     <div class="count-wrap" id="countdown" style="margin-top:18px">
@@ -577,7 +579,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 <footer>
   <div class="wrap">
     <div class="foot-top">
-      <div class="brand"><img class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
+      <div class="brand"><img width="640" height="257" class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
       <a href="https://pay.hub.la/sPZoheN2QGCFXAsdLG4J" data-checkout onclick="if(window.fbq)fbq('track','InitiateCheckout',{content_name:'pv03-rodape'});" class="btn btn-blue">Garantir meu ingresso</a>
     </div>
     <p class="foot-legal">Copyright © 2026 Sou Concurseiro e Vou Passar · Todos os direitos reservados · CNPJ: 21.894.883/0001-09. O número de até 5.000 vagas refere-se a uma <b>previsão/estimativa</b> de um novo concurso da PRF já <b>solicitado</b> — não há edital publicado nem garantia de vagas. Este evento não tem vínculo com a Polícia Rodoviária Federal nem com qualquer banca organizadora. Os resultados dependem do empenho e da dedicação individual de cada participante. Não há garantia de aprovação.</p>

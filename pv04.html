@@ -280,6 +280,8 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 .sticky-buy .btn{flex:0 0 auto;padding:.85em 1.4em}
 @media(max-width:560px){.sticky-buy .info span.sub{display:none}}
 
+/* âncoras não escondem sob o menu fixo */
+section[id],div[id="vitrine"]{scroll-margin-top:80px}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -291,15 +293,15 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 <div class="announce"><div class="track"><span>🚨 NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b> · INSCRIÇÕES ABERTAS PARA O EVENTO · <b>20 E 21 DE JULHO</b></span><span>🚨 NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b> · INSCRIÇÕES ABERTAS PARA O EVENTO · <b>20 E 21 DE JULHO</b></span></div></div>
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <div class="brand"><img class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
+    <div class="brand"><img width="640" height="257" class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
     <nav class="nav-links"><a href="#programacao">Programação</a><a href="#kit">O que você recebe</a><a href="#faq">Dúvidas</a></nav>
     <div class="nav-date">📅 20 e 21 JUL · 20h</div>
   </div>
 </header>
 <section class="hero">
-  <div class="hero-bg"><img src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
+  <div class="hero-bg"><img width="1920" height="1071" src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
   <div class="wrap hero-inner">
-    <img class="hero-logo reveal" src="assets/logo-stack.png" alt="Profissão PRF — brasão da Polícia Rodoviária Federal">
+    <img width="460" height="416" class="hero-logo reveal" src="assets/logo-stack.png" alt="Profissão PRF — brasão da Polícia Rodoviária Federal">
     <span class="eyebrow reveal">Evento online ao vivo · 2 noites</span>
     <h1 class="reveal d1">2 noites ao vivo pra você começar sua <span class="hl">aprovação na PRF</span>.</h1>
     <p class="lead reveal d2">Com o Delegado Fábio Silva — que reprovou 48 vezes antes de virar Delegado e aprovar +5.223 alunos. Você ainda leva um <b>kit completo de materiais</b> pra começar agora.</p>
@@ -309,7 +311,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   </div>
 </section>
 <section class="opp">
-  <div class="opp-bg"><img src="assets/viatura.jpg" alt=""></div>
+  <div class="opp-bg"><img width="1100" height="471" src="assets/viatura.jpg" alt=""></div>
   <div class="wrap"><div class="opp-grid">
     <div class="opp-item reveal"><div class="n">+5.223</div><small>alunos aprovados em<br>concursos por todo o Brasil</small></div>
     <div class="opp-item reveal d1"><div class="n blue">Até 5.000</div><small>vagas <b style="color:var(--gold-soft)">previstas</b> no novo<br>concurso já solicitado da PRF</small></div>
@@ -330,7 +332,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 <div class="section-divider"></div>
 <section class="sec" id="kit"><div class="wrap">
   <div class="sec-head center reveal" id="vitrine"><span class="eyebrow">Tudo que você recebe</span><h2>O <span class="kicker-gold">kit completo</span> de preparação</h2><p>Muito mais que um evento. Um arsenal pra você começar agora.</p></div>
-  <div class="kit-show reveal d1"><img src="assets/entregaveis.jpg" alt="Materiais do Profissão PRF: Arsenal Elite Federal, Raio-X PRF, Manual de Preparação PRF, Guia Prático do TAF"></div>
+  <div class="kit-show reveal d1"><img width="1400" height="961" src="assets/entregaveis.jpg" alt="Materiais do Profissão PRF: Arsenal Elite Federal, Raio-X PRF, Manual de Preparação PRF, Guia Prático do TAF"></div>
   <div class="feat-grid">
     <div class="feat reveal d1"><div class="ic">🎙️</div><h3>2 noites de imersão ao vivo</h3><p>Com o Delegado Fábio. Prático e aplicável desde o dia 1.</p><span class="val free">Incluso</span></div>
     <div class="feat reveal d2"><div class="ic">🔥</div><h3>Aulas de aquecimento</h3><p>Acesso imediato após a inscrição.</p><span class="val free">Acesso imediato</span></div>
@@ -355,13 +357,13 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 </section>
 <section class="sec bonus"><div class="wrap">
   <div class="auth-banner reveal">
-    <img src="assets/fabio-palco.jpg" alt="Auditório lotado em uma edição presencial do Profissão PRF">
+    <img width="1700" height="1133" src="assets/fabio-palco.jpg" alt="Auditório lotado em uma edição presencial do Profissão PRF">
     <div class="ov"><span class="eyebrow">Quem vai te guiar</span><b>Delegado Fábio Silva</b><small>Delegado de Polícia · Mentor de +5.223 aprovados</small></div>
   </div>
   <div class="gallery reveal d1" style="margin-top:0">
-    <div class="gphoto g-main"><img src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar"><div class="cap">Alunos reunidos na sede do SCVP</div></div>
-    <div class="gphoto g-sm"><img src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
-    <div class="gphoto g-sm"><img src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF"><div class="cap">Mais um sonho realizado</div></div>
+    <div class="gphoto g-main"><img width="1400" height="1400" src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar"><div class="cap">Alunos reunidos na sede do SCVP</div></div>
+    <div class="gphoto g-sm"><img width="898" height="1200" src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
+    <div class="gphoto g-sm"><img width="903" height="1200" src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF"><div class="cap">Mais um sonho realizado</div></div>
   </div>
 </div></section>
 <section class="sec offer" id="oferta">
@@ -401,7 +403,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   </div>
 </section>
 <section class="final">
-  <div class="final-bg"><img src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
+  <div class="final-bg"><img width="1344" height="768" src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
   <div class="wrap final-inner reveal">
     <span class="eyebrow red">O evento começa em</span>
     <div class="count-wrap" id="countdown" style="margin-top:18px">
@@ -418,7 +420,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 </section>
 <footer><div class="wrap">
   <div class="foot-top">
-    <div class="brand"><img class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
+    <div class="brand"><img width="640" height="257" class="brand-logo" src="assets/logo-h.png" alt="Profissão PRF — Sou Concurseiro e Vou Passar"></div>
   </div>
   <p class="foot-legal">Copyright © 2026 Sou Concurseiro e Vou Passar · Todos os direitos reservados · CNPJ: 21.894.883/0001-09. O número de até 5.000 vagas refere-se a uma <b>previsão/estimativa</b> de um novo concurso da PRF já <b>solicitado</b> — não há edital publicado nem garantia de vagas. Este evento não tem vínculo com a Polícia Rodoviária Federal nem com qualquer banca organizadora. Os resultados dependem do empenho individual. Não há garantia de aprovação.</p>
 </div></footer>

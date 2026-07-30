@@ -352,6 +352,8 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 /* banner em proporção natural (sem corte) */
 .banner-full{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line-strong);box-shadow:var(--shadow)}
 .banner-full img{width:100%;height:auto;display:block}
+/* âncoras não escondem sob o menu fixo */
+section[id],div[id="vitrine"]{scroll-margin-top:80px}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -369,9 +371,9 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   </div>
 </header>
 <section class="hero">
-  <div class="hero-bg"><img src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
+  <div class="hero-bg"><img width="1920" height="1071" src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
   <div class="wrap hero-inner">
-    <img class="hero-logo reveal" src="assets/logo-stack.png" alt="Brasão da Polícia Rodoviária Federal">
+    <img width="460" height="416" class="hero-logo reveal" src="assets/logo-stack.png" alt="Brasão da Polícia Rodoviária Federal">
     <span class="eyebrow reveal">Evento pago e ao vivo · 2 noites</span>
     <h1 class="reveal d1">Você não precisa de 6 horas por dia. Precisa parar de <span class="hl">desperdiçar as 2 que você tem</span>.</h1>
     <p class="lead reveal d2">Em <b>2 noites ao vivo</b>, o Delegado Fábio Silva te mostra como transformar as 2 horas que você já tem em uma <b>preparação organizada para a PRF</b> — priorizando os assuntos que mais caem e criando uma rotina possível.</p>
@@ -382,7 +384,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   </div>
 </section>
 <section class="opp">
-  <div class="opp-bg"><img src="assets/viatura.jpg" alt=""></div>
+  <div class="opp-bg"><img width="1100" height="471" src="assets/viatura.jpg" alt=""></div>
   <div class="wrap"><div class="opp-grid">
     <div class="opp-item reveal"><div class="n">+5.223</div><small>alunos aprovados em<br>concursos por todo o Brasil</small></div>
     <div class="opp-item reveal d1"><div class="n blue">Até 5.000</div><small>vagas <b style="color:var(--gold-soft)">previstas</b> no novo<br>concurso já solicitado da PRF</small></div>
@@ -402,23 +404,23 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 </div></section>
 <section class="sec" style="padding-bottom:0"><div class="wrap">
   <div class="banner-full reveal"><picture>
-      <source media="(max-width:640px)" srcset="assets/m2h-banner-mobile.jpg">
-      <img src="assets/m2h-banner.jpg" alt="Método 2 Horas PRF — como transformar pouco tempo, cansaço e falta de direção em uma preparação organizada para a PRF">
+      <source media="(max-width:640px)" srcset="assets/m2h-banner-mobile.jpg" width="960" height="1200">
+      <img width="1700" height="956" src="assets/m2h-banner.jpg" alt="Método 2 Horas PRF — como transformar pouco tempo, cansaço e falta de direção em uma preparação organizada para a PRF">
     </picture></div>
 </div></section>
 <div class="section-divider"></div>
 <section class="sec" id="kit"><div class="wrap">
   <div class="sec-head center reveal"><span class="eyebrow">Kit Método 2 Horas PRF</span><h2>Você não sai só motivado. Sai com o <span class="kicker-gold">método e os materiais</span>.</h2><p>Ao garantir seu ingresso, você recebe o Kit Método 2 Horas PRF para começar a organizar sua preparação — sem improviso.</p></div>
   <div class="ent-row reveal">
-    <div class="ent-media"><img src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div>
+    <div class="ent-media"><img width="656" height="900" src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 01</span><h3>Manual de Preparação PRF</h3><p>O mapa para entender como organizar sua jornada até a aprovação. <span class="b">Método, não motivação.</span></p><span class="val">Valor avulso: R$ 120</span></div>
   </div>
   <div class="ent-row rev reveal">
-    <div class="ent-media"><img src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div>
+    <div class="ent-media"><img width="773" height="1100" src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 02</span><h3>Raio-X PRF</h3><p>Uma visão clara sobre o concurso: requisitos, etapas e o que você precisa dominar. <span class="b">Você sabe exatamente onde está pisando.</span></p><span class="val">Valor avulso: R$ 170</span></div>
   </div>
   <div class="ent-row reveal">
-    <div class="ent-media"><img src="assets/m2h-ovos.jpg" alt="Planilha Ovos de Ouro PRF — assuntos com maior incidência na prova" loading="lazy"></div>
+    <div class="ent-media"><img width="1700" height="956" src="assets/m2h-ovos.jpg" alt="Planilha Ovos de Ouro PRF — assuntos com maior incidência na prova" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 03</span><h3>Planilha Ovos de Ouro PRF</h3><p>A ferramenta para saber quais assuntos merecem prioridade máxima. <span class="b">Comece pelos temas com maior incidência na prova.</span></p><span class="val">Valor avulso: R$ 150</span></div>
   </div>
   <div class="value-strip reveal">Só o kit já soma <b>R$ 440,00</b> <s>em valor avulso</s> — <b style="color:var(--green)">incluso em qualquer ingresso.</b></div>
@@ -457,7 +459,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 </div></section>
 <section class="sec bonus"><div class="wrap">
   <div class="auth-banner reveal">
-    <img src="assets/fabio-palco.jpg" alt="Auditório lotado em um evento presencial do Delegado Fábio Silva">
+    <img width="1700" height="1133" src="assets/fabio-palco.jpg" alt="Auditório lotado em um evento presencial do Delegado Fábio Silva">
     <div class="ov"><span class="eyebrow">Quem vai te guiar</span><b>Delegado Fábio Silva</b><small>Delegado de Polícia · Mentor de +5.223 aprovados</small></div>
   </div>
   <div class="auth-body reveal d1">
@@ -470,9 +472,9 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
     </div>
   </div>
   <div class="gallery reveal d1">
-    <div class="gphoto g-main"><img src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar" loading="lazy"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
-    <div class="gphoto g-sm"><img src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF" loading="lazy"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
-    <div class="gphoto g-sm"><img src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF" loading="lazy"><div class="cap">Mais um sonho realizado</div></div>
+    <div class="gphoto g-main"><img width="1400" height="1400" src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar" loading="lazy"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
+    <div class="gphoto g-sm"><img width="898" height="1200" src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF" loading="lazy"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
+    <div class="gphoto g-sm"><img width="903" height="1200" src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF" loading="lazy"><div class="cap">Mais um sonho realizado</div></div>
   </div>
 </div></section>
 <section class="sec offer" id="oferta"><div class="wrap">
@@ -516,7 +518,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   </div>
 </div></section>
 <section class="final">
-  <div class="final-bg"><img src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
+  <div class="final-bg"><img width="1344" height="768" src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
   <div class="wrap final-inner reveal">
     <span class="eyebrow red">O evento começa em</span>
     <div class="count-wrap" id="countdown" style="margin-top:18px">
