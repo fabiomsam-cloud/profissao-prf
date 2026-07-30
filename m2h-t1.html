@@ -354,6 +354,7 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 .banner-full img{width:100%;height:auto;display:block}
 /* âncoras não escondem sob o menu fixo */
 section[id],div[id="vitrine"]{scroll-margin-top:80px}
+.lote-pill{display:inline-block;font-family:'JetBrains Mono';font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#03260f;background:linear-gradient(135deg,#1f9d57,var(--green));padding:.45em .85em;border-radius:999px;margin-bottom:.5em}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -362,7 +363,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
 </style>
 </head>
 <body>
-<div class="announce"><div class="track"><span>🚨 <b>MÉTODO 2 HORAS PRF</b> · EVENTO AO VIVO · <b>24 E 25 DE AGOSTO</b> · NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b></span><span>🚨 <b>MÉTODO 2 HORAS PRF</b> · EVENTO AO VIVO · <b>24 E 25 DE AGOSTO</b> · NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b></span></div></div>
+<div class="announce"><div class="track"><span>🚨 <b>MÉTODO 2 HORAS PRF</b> · 24 E 25 DE AGOSTO · <b>🎟️ LOTE 1 PROMOCIONAL</b> · NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b></span><span>🚨 <b>MÉTODO 2 HORAS PRF</b> · 24 E 25 DE AGOSTO · <b>🎟️ LOTE 1 PROMOCIONAL</b> · NOVO CONCURSO PRF COM PREVISÃO DE ATÉ <b>5.000 VAGAS</b></span></div></div>
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <div class="brand"><span class="mark">2H</span><div>Método 2 Horas PRF<small>Sou Concurseiro e Vou Passar</small></div></div>
@@ -371,9 +372,9 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
   </div>
 </header>
 <section class="hero">
-  <div class="hero-bg"><img width="1920" height="1071" src="assets/hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
+  <div class="hero-bg"><img width="1400" height="781" src="assets/opt-hero.jpg" alt="Equipe da Polícia Rodoviária Federal em rodovia ao pôr do sol"></div>
   <div class="wrap hero-inner">
-    <img width="460" height="416" class="hero-logo reveal" src="assets/logo-stack.png" alt="Brasão da Polícia Rodoviária Federal">
+    <img width="380" height="343" class="hero-logo reveal" src="assets/opt-logo-stack.png" alt="Brasão da Polícia Rodoviária Federal">
     <span class="eyebrow reveal">Evento pago e ao vivo · 2 noites</span>
     <h1 class="reveal d1">Trabalha o dia inteiro e quer <span class="hl">estudar para a PRF</span>?</h1>
     <p class="lead reveal d2">Em <b>2 noites ao vivo</b>, você vai entender como aplicar o <b>Método 2 Horas PRF</b> para sair do improviso e montar uma preparação possível, focada no que mais cai. Para quem trabalha o dia inteiro, tem pouco tempo e precisa de um <b>plano possível</b> — não de um cronograma de fantasia.</p>
@@ -383,7 +384,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
   </div>
 </section>
 <section class="opp">
-  <div class="opp-bg"><img width="1100" height="471" src="assets/viatura.jpg" alt=""></div>
+  <div class="opp-bg"><img width="1000" height="428" src="assets/opt-viatura.jpg" alt=""></div>
   <div class="wrap"><div class="opp-grid">
     <div class="opp-item reveal"><div class="n">+5.223</div><small>alunos aprovados em<br>concursos por todo o Brasil</small></div>
     <div class="opp-item reveal d1"><div class="n blue">Até 5.000</div><small>vagas <b style="color:var(--gold-soft)">previstas</b> no novo<br>concurso já solicitado da PRF</small></div>
@@ -391,6 +392,18 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
     <div class="opp-item reveal d3"><div class="n blue">2h por dia</div><small>é tudo que o método<br>precisa da sua rotina</small></div>
   </div></div>
 </section>
+<section class="sec" style="padding:34px 0 0"><div class="wrap">
+  <div class="reveal" style="background:linear-gradient(135deg,rgba(246,166,35,.12),rgba(46,91,186,.08));border:1px solid rgba(246,166,35,.3);border-radius:var(--r-lg);padding:clamp(20px,3.5vw,30px);display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+    <div style="flex:1;min-width:240px">
+      <div style="font-family:'JetBrains Mono';font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:700;margin-bottom:.4em">🎟️ Lote 1 · preço promocional</div>
+      <div style="font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(1.2rem,2.8vw,1.7rem)">Ingressos a partir de <span style="color:var(--gold-soft)">R$ 19,90</span> — com o Kit de R$ 440 incluso</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a href="https://pay.hub.la/R3gHIPdkJPVqM5uHOz7U" data-checkout onclick="if(window.fbq)fbq('track','InitiateCheckout',{content_name:'m2h-t1-mini'});" class="btn btn-primary">GARANTIR AGORA — R$ 19,90</a>
+      <a href="#oferta" class="btn btn-ghost">Ver ingresso VIP ↓</a>
+    </div>
+  </div>
+</div></section>
 <section class="sec story"><div class="wrap story-wrap">
   <div class="sec-head reveal" style="margin-bottom:34px"><span class="eyebrow">A real</span><h2>O problema nunca foi o seu tempo. Foi a <span class="kicker-gold">falta de direção</span>.</h2></div>
   <div class="reveal d1">
@@ -403,23 +416,23 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
 </div></section>
 <section class="sec" style="padding-bottom:0"><div class="wrap">
   <div class="banner-full reveal"><picture>
-      <source media="(max-width:640px)" srcset="assets/m2h-banner-mobile.jpg" width="960" height="1200">
-      <img width="1700" height="956" src="assets/m2h-banner.jpg" alt="Método 2 Horas PRF — como transformar pouco tempo, cansaço e falta de direção em uma preparação organizada para a PRF">
+      <source media="(max-width:640px)" srcset="assets/opt-m2h-banner-mobile.jpg" width="720" height="900">
+      <img width="1300" height="731" src="assets/opt-m2h-banner.jpg" alt="Método 2 Horas PRF — como transformar pouco tempo, cansaço e falta de direção em uma preparação organizada para a PRF">
     </picture></div>
 </div></section>
 <div class="section-divider"></div>
 <section class="sec" id="kit"><div class="wrap">
   <div class="sec-head center reveal"><span class="eyebrow">Kit Método 2 Horas PRF</span><h2>Você não sai só motivado. Sai com o <span class="kicker-gold">método e os materiais</span>.</h2><p>Ao garantir seu ingresso, você recebe o Kit Método 2 Horas PRF para começar a organizar sua preparação — sem improviso.</p></div>
   <div class="ent-row reveal">
-    <div class="ent-media"><img width="656" height="900" src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div>
+    <div class="ent-media"><img width="510" height="700" src="assets/opt-ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 01</span><h3>Manual de Preparação PRF</h3><p>O mapa para entender como organizar sua jornada até a aprovação. <span class="b">Método, não motivação.</span></p><span class="val">Valor avulso: R$ 120</span></div>
   </div>
   <div class="ent-row rev reveal">
-    <div class="ent-media"><img width="773" height="1100" src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div>
+    <div class="ent-media"><img width="562" height="800" src="assets/opt-ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 02</span><h3>Raio-X PRF</h3><p>Uma visão clara sobre o concurso: requisitos, etapas e o que você precisa dominar. <span class="b">Você sabe exatamente onde está pisando.</span></p><span class="val">Valor avulso: R$ 170</span></div>
   </div>
   <div class="ent-row reveal">
-    <div class="ent-media"><img width="1700" height="956" src="assets/m2h-ovos.jpg" alt="Planilha Ovos de Ouro PRF — assuntos com maior incidência na prova" loading="lazy"></div>
+    <div class="ent-media"><img width="1100" height="618" src="assets/opt-m2h-ovos.jpg" alt="Planilha Ovos de Ouro PRF — assuntos com maior incidência na prova" loading="lazy"></div>
     <div class="ent-txt"><span class="eyebrow">Kit · Item 03</span><h3>Planilha Ovos de Ouro PRF</h3><p>A ferramenta para saber quais assuntos merecem prioridade máxima. <span class="b">Comece pelos temas com maior incidência na prova.</span></p><span class="val">Valor avulso: R$ 150</span></div>
   </div>
   <div class="value-strip reveal">Só o kit já soma <b>R$ 440,00</b> <s>em valor avulso</s> — <b style="color:var(--green)">incluso em qualquer ingresso.</b></div>
@@ -458,7 +471,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
 </div></section>
 <section class="sec bonus"><div class="wrap">
   <div class="auth-banner reveal">
-    <img width="1700" height="1133" src="assets/fabio-palco.jpg" alt="Auditório lotado em um evento presencial do Delegado Fábio Silva">
+    <img width="1300" height="866" src="assets/opt-fabio-palco.jpg" alt="Auditório lotado em um evento presencial do Delegado Fábio Silva">
     <div class="ov"><span class="eyebrow">Quem vai te guiar</span><b>Delegado Fábio Silva</b><small>Delegado de Polícia · Mentor de +5.223 aprovados</small></div>
   </div>
   <div class="auth-body reveal d1">
@@ -471,17 +484,17 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
     </div>
   </div>
   <div class="gallery reveal d1">
-    <div class="gphoto g-main"><img width="1400" height="1400" src="assets/alunos-aprovados.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar" loading="lazy"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
-    <div class="gphoto g-sm"><img width="898" height="1200" src="assets/delegado-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF" loading="lazy"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
-    <div class="gphoto g-sm"><img width="903" height="1200" src="assets/delegado-abraco.jpg" alt="Comemoração de aprovação na PRF" loading="lazy"><div class="cap">Mais um sonho realizado</div></div>
+    <div class="gphoto g-main"><img width="900" height="900" src="assets/opt-alunos.jpg" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar" loading="lazy"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
+    <div class="gphoto g-sm"><img width="673" height="900" src="assets/opt-formatura.jpg" alt="Mentor ao lado de aprovados na UNIPRF" loading="lazy"><div class="cap">Ao lado de aprovados, na UNIPRF</div></div>
+    <div class="gphoto g-sm"><img width="677" height="900" src="assets/opt-abraco.jpg" alt="Comemoração de aprovação na PRF" loading="lazy"><div class="cap">Mais um sonho realizado</div></div>
   </div>
 </div></section>
 <section class="sec offer" id="oferta"><div class="wrap">
-  <div class="sec-head center reveal"><span class="eyebrow">Inscreva-se agora</span><h2>Escolha o seu <span class="kicker-gold">ingresso</span></h2><p>Os dois dão acesso completo ao evento e ao Kit. O VIP leva o plano pronto para a sua rotina.</p></div>
+  <div class="sec-head center reveal"><span class="eyebrow">Inscreva-se agora</span><h2>Escolha o seu <span class="kicker-gold">ingresso</span></h2><p>Os dois dão acesso completo ao evento e ao Kit. O VIP leva o plano pronto para a sua rotina. <b style="color:var(--gold-soft)">Preços promocionais de Lote 1.</b></p></div>
   <div class="tickets">
     <div class="ticket reveal d1">
       <h3>Ingresso Básico</h3>
-      <div class="tprice"><span class="rs">R$</span>19,90</div>
+      <div class="lote-pill">🎟️ Lote 1 · Preço promocional</div><div class="tprice"><span class="rs">R$</span>19,90</div>
       <div class="tsub">pagamento único</div>
       <ul><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Acesso às <b>2 noites de evento ao vivo</b> (24 e 25/08, 20h)</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Manual de Preparação PRF</b> (R$ 120)</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Raio-X PRF</b> (R$ 170)</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Planilha Ovos de Ouro PRF</b> (R$ 150)</li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Suporte para dúvidas durante o evento</li></ul>
       <!-- LINK HUBLA BÁSICO: substituir o href abaixo pelo checkout do ingresso Básico -->
@@ -490,7 +503,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
     <div class="ticket vip reveal d2">
       <span class="tbadge">⭐ Mais escolhido</span>
       <h3>Ingresso VIP</h3>
-      <div class="tprice" style="color:var(--gold-soft)"><span class="rs">R$</span>99,90</div>
+      <div class="lote-pill">🎟️ Lote 1 · Preço promocional</div><div class="tprice" style="color:var(--gold-soft)"><span class="rs">R$</span>99,90</div>
       <div class="tsub">pagamento único</div>
       <ul><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> <b>Tudo do Ingresso Básico</b> (2 noites + Kit completo de R$ 440)</li></ul>
       <div class="vip-item"><b>⭐ SUPER ENTREGÁVEL VIP:</b> Plano de Estudos <b>Personalizado e Individual</b> de todo o edital da PRF<small>Montado para a sua rotina, com prioridade no que mais cai, e entregue em <b>PDF individual</b> — valor simbólico de R$ 497, incluso no VIP.</small></div>
@@ -517,7 +530,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
   </div>
 </div></section>
 <section class="final">
-  <div class="final-bg"><img width="1344" height="768" src="assets/congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
+  <div class="final-bg"><img width="1100" height="628" src="assets/opt-congresso.jpg" alt="Policiais da PRF em frente ao Congresso Nacional"></div>
   <div class="wrap final-inner reveal">
     <span class="eyebrow red">O evento começa em</span>
     <div class="count-wrap" id="countdown" style="margin-top:18px">
@@ -549,7 +562,10 @@ addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 (function(){var target=new Date('2026-08-24T20:00:00-03:00').getTime();var cd=document.getElementById('countdown');if(!cd)return;var d=cd.querySelector('[data-d]'),h=cd.querySelector('[data-h]'),m=cd.querySelector('[data-m]'),s=cd.querySelector('[data-s]');function p(n){return String(n).padStart(2,'0')}function tick(){var t=target-Date.now();if(t<0)t=0;d.textContent=p(Math.floor(t/86400000));h.textContent=p(Math.floor(t/3600000)%24);m.textContent=p(Math.floor(t/60000)%60);s.textContent=p(Math.floor(t/1000)%60);}tick();setInterval(tick,1000);})();
-(function(){var bar=document.getElementById('stickyBuy'),g=document.querySelector('#kit'),of=document.getElementById('oferta');if(!bar||!g)return;function s(){var show=g.getBoundingClientRect().bottom<0;if(of){var r=of.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)show=false;}bar.classList.toggle('show',show);}addEventListener('scroll',s,{passive:true});addEventListener('resize',s);s();})();
+(function(){var bar=document.getElementById('stickyBuy'),g=document.querySelector('.opp'),of=document.getElementById('oferta');if(!bar||!g)return;function s(){var show=g.getBoundingClientRect().bottom<0;if(of){var r=of.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)show=false;}bar.classList.toggle('show',show);}addEventListener('scroll',s,{passive:true});addEventListener('resize',s);s();})();
+</script>
+<script>
+(function(){var t=document.getElementById('oferta');if(!t||!('IntersectionObserver' in window))return;var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(window.fbq)fbq('track','ViewContent',{content_name:'m2h-t1-oferta-vista'});o.disconnect();}})},{threshold:.25});o.observe(t);})();
 </script>
 <!-- Hubla: repassa os UTMs da URL da página para os links de checkout (sck) -->
 <script type="text/javascript">var _prefixDomains=["https://pay.hub.la", "https://invoice.hub.la", "https://app.hub.la", "https://hub.la"];function _getUtmParams(){var a="",r=window.top.location.href,e=new URL(r);if(null!==e){var t=e.searchParams.get("utm_source"),n=e.searchParams.get("utm_medium"),m=e.searchParams.get("utm_campaign"),o=e.searchParams.get("utm_term"),s=e.searchParams.get("utm_content");-1!==r.indexOf("?")&&(a="&sck="+t+"|"+n+"|"+m+"|"+o+"|"+s,console.log("[hubla][utms]",a))}return a}!function(){var a=new URLSearchParams(window.location.search);a.toString()&&document.querySelectorAll("a").forEach((function(r){for(var e=0;e<_prefixDomains.length;e++)-1!==r.href.indexOf(_prefixDomains[e])&&(-1===r.href.indexOf("?")?r.href+="?"+a.toString()+_getUtmParams():r.href+="&"+a.toString()+_getUtmParams())}))}();</script>
