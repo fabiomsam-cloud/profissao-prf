@@ -355,6 +355,16 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 /* âncoras não escondem sob o menu fixo */
 section[id],div[id="vitrine"]{scroll-margin-top:80px}
 .lote-pill{display:inline-block;font-family:'JetBrains Mono';font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#03260f;background:linear-gradient(135deg,#1f9d57,var(--green));padding:.45em .85em;border-radius:999px;margin-bottom:.5em}
+/* sorteios em miniatura (card VIP) */
+.sort-mini{margin:.7em 0 .3em;padding:14px;border:1px dashed rgba(246,166,35,.45);border-radius:14px;background:rgba(246,166,35,.06)}
+.sort-mini .sm-title{font-family:'JetBrains Mono';font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:10px}
+.sm-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:400px){.sm-grid{grid-template-columns:1fr}}
+.sm-item{display:flex;align-items:center;gap:10px;background:rgba(7,11,22,.45);border:1px solid var(--line);border-radius:12px;padding:10px}
+.sm-item img{width:58px;height:58px;object-fit:contain;flex:0 0 auto;filter:drop-shadow(0 6px 12px rgba(0,0,0,.5))}
+.sm-item b{display:block;font-size:.84rem;line-height:1.25;font-family:'Bricolage Grotesque'}
+.sm-item small{display:block;font-size:.74rem;color:var(--muted);line-height:1.3;margin-top:2px}
+.sm-item small .gold{color:var(--gold-soft)}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -469,7 +479,13 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
         <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Suporte para dúvidas durante o evento</li>
       </ul>
       <div class="vip-item"><b>⭐ SUPER ENTREGÁVEL:</b> Plano de Estudos <b>Personalizado e Individual</b> de todo o edital da PRF<small>Montado para a sua rotina, com prioridade no que mais cai, e entregue em <b>PDF individual</b> — valor simbólico de R$ 497, incluso.</small></div>
-      <ul style="margin-top:.6em"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9L12 3Z" stroke="#FFC25C" stroke-width="1.6" stroke-linejoin="round"/></svg> Concorre aos sorteios de <b>Camisa</b> e <b>Mentoria Elite PRF</b></li></ul>
+      <div class="sort-mini">
+        <div class="sm-title">⭐ E ainda concorre aos sorteios de:</div>
+        <div class="sm-grid">
+          <div class="sm-item"><img src="assets/sorteio-camisa.png" width="300" height="260" alt="Camisa Elite PRF (frente e verso)" loading="lazy"><div><b>Camisa Elite PRF</b><small>a camisa oficial da tropa</small></div></div>
+          <div class="sm-item"><img src="assets/sorteio-elite.png" width="238" height="300" alt="Brasão da Mentoria Elite PRF" loading="lazy"><div><b>Mentoria Elite PRF</b><small>no valor de <b class="gold">R$ 3.000,00</b></small></div></div>
+        </div>
+      </div>
       <a href="https://pay.hub.la/6mebFq9CVyNjuwN1cis6" data-checkout-vip onclick="if(window.fbq)fbq('track','InitiateCheckout',{content_name:'m2h-vip-oferta'});" class="btn btn-primary">GARANTIR INGRESSO VIP ⭐ — R$ 99,90</a>
     </div>
   </div>
