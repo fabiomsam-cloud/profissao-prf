@@ -109,6 +109,17 @@ h1 .hl{color:var(--blue)}
 .gline{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:14px;font-size:.88rem;color:var(--txt)}
 .gline .s{color:var(--green);font-size:1.15rem}
 
+/* prova social */
+.proof{margin-top:16px}
+.proof .pt{font-family:'JetBrains Mono';font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);text-align:center;margin-bottom:10px}
+.pgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:10px}
+@media(max-width:560px){.pgrid{grid-template-columns:1fr 1fr}.pgrid .pmain{grid-column:1/-1}}
+.pph{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--alt)}
+.pph img{width:100%;height:100%;object-fit:cover;display:block}
+.pph .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 10px 8px;background:linear-gradient(transparent,rgba(10,18,40,.85));font-size:.72rem;font-weight:700;color:#fff;line-height:1.3}
+.pmain img{aspect-ratio:16/11}
+.pph.psm img{aspect-ratio:3/4}
+
 footer{margin-top:34px;border-top:1px solid var(--line);padding:22px 0 90px}
 .legal{font-size:.72rem;color:var(--soft);line-height:1.55}
 
@@ -194,6 +205,14 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:22px 0 90px}
   <div class="trustcard">
     <img src="assets/opt-fabio-palco.jpg" width="1300" height="866" alt="Delegado Fábio Silva" loading="lazy">
     <p><b>Delegado Fábio Silva</b> — reprovou 48 vezes antes de virar Delegado de Polícia. Hoje, <b>+5.223 alunos aprovados</b> por todo o Brasil com a metodologia que você vai ver ao vivo.</p>
+  </div>
+  <div class="proof">
+    <div class="pt">⭐ Alunos aprovados — quem seguiu o método, hoje veste a farda</div>
+    <div class="pgrid">
+      <div class="pph pmain"><img src="assets/opt-alunos.jpg" width="900" height="900" alt="Centenas de alunos reunidos na sede do Sou Concurseiro e Vou Passar" loading="lazy"><div class="cap">Alunos reunidos na sede do Sou Concurseiro e Vou Passar</div></div>
+      <div class="pph psm"><img src="assets/opt-formatura.jpg" width="673" height="900" alt="Delegado Fábio Silva na formatura da PRF ao lado de alunos aprovados" loading="lazy"><div class="cap">Na formatura da PRF, com alunos aprovados</div></div>
+      <div class="pph psm"><img src="assets/opt-abraco.jpg" width="677" height="900" alt="Abraço em aluno aprovado na PRF, na UNIPRF" loading="lazy"><div class="cap">Mais um sonho realizado</div></div>
+    </div>
   </div>
   <div class="gline"><span class="s">🛡️</span> <span><b style="color:var(--navy)">Garantia incondicional de 7 dias</b> — não gostou, devolvemos 100%.</span></div>
 </div></section>
