@@ -109,6 +109,16 @@ h1 .hl{color:var(--blue)}
 .gline{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:14px;font-size:.88rem;color:var(--txt)}
 .gline .s{color:var(--green);font-size:1.15rem}
 
+/* notícia 5.000 vagas */
+.noticia{padding:26px 0 4px}
+.noticia .nt{font-family:'Bricolage Grotesque';font-weight:800;color:var(--navy);text-align:center;font-size:clamp(1.15rem,3.4vw,1.5rem);margin-bottom:14px}
+.noticia .nt .hl{color:var(--gold)}
+.ncard{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;background:var(--alt);border:1px solid var(--line);border-radius:18px;padding:16px}
+@media(max-width:560px){.ncard{grid-template-columns:1fr;justify-items:center}}
+.ncard .brs{width:100px;filter:drop-shadow(0 8px 18px rgba(27,45,92,.25))}
+.ncard .nimg{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}
+.ncard .nimg img{border-radius:8px}
+.nsrc{text-align:center;font-size:.72rem;color:var(--soft);margin-top:8px}
 /* depoimentos */
 .depos{padding:26px 0 4px}
 .depos .dt{font-family:'Bricolage Grotesque';font-weight:800;color:var(--navy);text-align:center;font-size:clamp(1.15rem,3.4vw,1.5rem);margin-bottom:12px}
@@ -158,6 +168,14 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:22px 0 90px}
 </div></section>
 
 <!-- KIT -->
+<section class="noticia" id="noticia"><div class="wrap">
+  <div class="nt"><span class="hl">Próximo concurso PRF</span> com previsão de 5.000 vagas</div>
+  <div class="ncard">
+    <img class="brs" src="assets/brasao-prf.png" width="255" height="300" alt="Brasão da Polícia Rodoviária Federal" loading="lazy">
+    <div class="nimg"><img src="assets/noticia-prf.png" width="643" height="512" alt="Notícia: Concurso PRF — novo pedido é enviado com mais de 5 mil vagas (5.137), confirmado pelo MJSP" loading="lazy"></div>
+  </div>
+  <div class="nsrc">Pedido oficial com 5.137 vagas confirmado pelo MJSP · Fonte: Folha Dirigida/QConcursos</div>
+</div></section>
 <section class="depos" id="depoimentos"><div class="wrap">
   <div class="dt">Veja o que as pessoas que participaram do último encontro <span class="hl">disseram</span>:</div>
   <div class="depo-panel"><div class="depo-grid">
@@ -250,7 +268,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:22px 0 90px}
 </div></section>
 
 <footer><div class="wrap">
-  <p class="legal">Copyright © 2026 Sou Concurseiro e Vou Passar · CNPJ: 21.894.883/0001-09. As imagens dos materiais são mockups ilustrativos; os entregáveis do Kit são digitais (PDF e planilha). O Plano de Estudos Personalizado é entregável exclusivo do Ingresso VIP. A Camisa e a Mentoria Elite PRF são prêmios de sorteio entre os participantes, não itens garantidos do ingresso. Este evento não tem vínculo com a Polícia Rodoviária Federal nem com qualquer banca organizadora. Os resultados dependem do empenho individual. Não há garantia de aprovação.</p>
+  <p class="legal">Copyright © 2026 Sou Concurseiro e Vou Passar · CNPJ: 21.894.883/0001-09. As imagens dos materiais são mockups ilustrativos; os entregáveis do Kit são digitais (PDF e planilha). O Plano de Estudos Personalizado é entregável exclusivo do Ingresso VIP. A Camisa e a Mentoria Elite PRF são prêmios de sorteio entre os participantes, não itens garantidos do ingresso. O número de 5.000 vagas refere-se a uma previsão/estimativa de um novo concurso da PRF já solicitado — não há edital publicado nem garantia de vagas. Este evento não tem vínculo com a Polícia Rodoviária Federal nem com qualquer banca organizadora. Os resultados dependem do empenho individual. Não há garantia de aprovação.</p>
 </div></footer>
 
 <!-- STICKY -->

@@ -359,6 +359,13 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
 .depo-grid{columns:2;column-gap:12px;max-width:940px;margin:0 auto}
 @media(max-width:640px){.depo-grid{columns:1;max-width:460px}}
 .depo-grid img{width:100%;height:auto;margin-bottom:10px;border-radius:10px;border:1px solid var(--line);display:block;break-inside:avoid}
+/* notícia 5.000 vagas */
+.noticia-grid{display:grid;grid-template-columns:200px 1fr;gap:34px;align-items:center;max-width:880px;margin:0 auto}
+@media(max-width:680px){.noticia-grid{grid-template-columns:1fr;gap:18px;justify-items:center}.noticia-grid .brs{width:130px}}
+.noticia-grid .brs{width:180px;filter:drop-shadow(0 14px 28px rgba(0,0,0,.5))}
+.noticia-img{background:#fff;border-radius:16px;padding:10px;box-shadow:0 26px 60px -24px rgba(0,0,0,.7);border:1px solid var(--line-strong)}
+.noticia-img img{border-radius:10px}
+.noticia-src{text-align:center;font-size:.78rem;color:var(--muted-2);margin-top:14px}
 /* reveal */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
@@ -388,6 +395,14 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
     <div class="hero-note reveal d3"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="#2FD27A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Garantia incondicional de 7 dias.</div>
   </div>
 </section>
+<section class="sec" id="noticia" style="padding:56px 0 22px"><div class="wrap">
+  <div class="sec-head center reveal" style="margin-bottom:32px"><h2 style="font-size:clamp(1.5rem,4.2vw,2.4rem)"><span class="kicker-gold">Próximo concurso PRF</span> com previsão de 5.000 vagas</h2></div>
+  <div class="noticia-grid reveal d1">
+    <img class="brs" src="assets/brasao-prf.png" width="255" height="300" alt="Brasão da Polícia Rodoviária Federal" loading="lazy">
+    <div class="noticia-img"><img src="assets/noticia-prf.png" width="643" height="512" alt="Notícia: Concurso PRF — novo pedido é enviado com mais de 5 mil vagas (5.137), confirmado pelo MJSP à Folha Dirigida/QConcursos" loading="lazy"></div>
+  </div>
+  <div class="noticia-src reveal d2">Pedido oficial com 5.137 vagas confirmado pelo Ministério da Justiça e Segurança Pública · Fonte: Folha Dirigida/QConcursos</div>
+</div></section>
 <section class="opp">
   <div class="opp-bg"><img width="1000" height="428" src="assets/opt-viatura.jpg" alt=""></div>
   <div class="wrap"><div class="opp-grid">
