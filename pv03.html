@@ -58,7 +58,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--midnight);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4{font-family:'Bricolage Grotesque',sans-serif;line-height:1.04;letter-spacing:-.02em;font-weight:700}
 a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto} /* height:auto: os atributos width/height (anti layout-shift) não podem fixar a altura e furar o aspect-ratio */
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
 .mono{font-family:'JetBrains Mono',monospace;letter-spacing:.04em}
 
@@ -281,13 +281,12 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 @media(max-width:560px){.sticky-buy .info span.sub{display:none}}
 
 /* deliverables — wall (grade de capas) */
-.ent-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-@media(max-width:900px){.ent-wall{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:520px){.ent-wall{grid-template-columns:repeat(2,1fr)}}
+.ent-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:780px;margin:0 auto}
+@media(max-width:520px){.ent-wall{gap:10px}.ent-card{padding:12px 8px 12px}.ent-card b{font-size:.8rem}}
 .ent-card{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;padding:18px 14px 16px;text-align:center;transition:transform .3s,border-color .3s}
 .ent-card:hover{transform:translateY(-6px);border-color:var(--line-strong)}
-.ent-card .ph{aspect-ratio:3/4;display:grid;place-items:center;margin-bottom:14px;background:radial-gradient(ellipse at 50% 92%,rgba(46,91,186,.2),transparent 70%)}
-.ent-card .ph img{max-height:100%;max-width:100%;width:auto;object-fit:contain;filter:drop-shadow(0 16px 24px rgba(0,0,0,.55))}
+.ent-card .ph{aspect-ratio:3/4;position:relative;margin-bottom:14px;background:radial-gradient(ellipse at 50% 92%,rgba(46,91,186,.2),transparent 70%)}
+.ent-card .ph img{position:absolute;inset:6%;width:88%;height:88%;max-width:none;object-fit:contain;filter:drop-shadow(0 16px 24px rgba(0,0,0,.55))}
 .ent-card b{display:block;font-family:'Bricolage Grotesque';font-size:.92rem;line-height:1.2;margin-bottom:.5em}
 .ent-card .val{font-family:'JetBrains Mono';font-size:.64rem;font-weight:600;color:var(--gold-soft);background:rgba(246,166,35,.1);border:1px solid rgba(246,166,35,.28);border-radius:999px;padding:.3em .6em;display:inline-block}
 .kit-sub{text-align:center;font-family:'JetBrains Mono';font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:42px 0 26px;display:flex;align-items:center;gap:14px;justify-content:center}
@@ -440,8 +439,6 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
     <div class="ent-wall reveal d1">
       <div class="ent-card"><div class="ph"><img width="773" height="1100" src="assets/ent-raiox.jpg" alt="Capa do Raio-X PRF" loading="lazy"></div><b>Raio-X PRF</b><span class="val">R$ 170</span></div>
       <div class="ent-card"><div class="ph"><img width="704" height="900" src="assets/ent-arsenal.jpg" alt="Capa do Arsenal Elite Federal" loading="lazy"></div><b>Arsenal Elite Federal</b><span class="val">R$ 100</span></div>
-      <div class="ent-card"><div class="ph"><img width="656" height="900" src="assets/ent-manual.jpg" alt="Capa do Manual de Preparação PRF" loading="lazy"></div><b>Manual de Preparação PRF</b><span class="val">R$ 120</span></div>
-      <div class="ent-card"><div class="ph"><img width="1000" height="776" src="assets/ent-planilha.png" alt="Planilha de Controle de Estudos PRF" loading="lazy"></div><b>Planilha de Controle de Estudos</b><span class="val">R$ 150</span></div>
       <div class="ent-card"><div class="ph"><img width="756" height="1000" src="assets/ent-taf.jpg" alt="Capa do Guia Prático do TAF-PRF" loading="lazy"></div><b>Guia Prático do TAF</b><span class="val">R$ 100</span></div>
     </div>
     <div class="kit-sub">Materiais liberados para quem assistir à aula ao vivo completa</div>
@@ -450,7 +447,7 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
       <div class="feat reveal d2"><div class="ic">🎁</div><h3>Kit de materiais ao final da aula</h3><p>Assistiu à aula ao vivo até o final, recebe todos os materiais acima.</p><span class="val free">Incluso</span></div>
       <div class="feat reveal d3"><div class="ic">💬</div><h3>Suporte para dúvidas durante a aula</h3><p>Tire suas dúvidas em tempo real na aula ao vivo.</p><span class="val free">Incluso</span></div>
     </div>
-    <div class="value-strip reveal">Só em materiais, são <b>R$ 640,00</b> <s>de valor avulso</s> — <b style="color:var(--green)">liberados para quem assistir à aula completa, com o seu ingresso de R$ 19,90.</b></div>
+    <div class="value-strip reveal">Só em materiais, são <b>R$ 370,00</b> <s>de valor avulso</s> — <b style="color:var(--green)">liberados para quem assistir à aula completa, com o seu ingresso de R$ 19,90.</b></div>
   </div>
 </section>
 
@@ -517,11 +514,10 @@ section[id],div[id="vitrine"]{scroll-margin-top:80px}
       <span class="offer-badge">Ingresso Profissão PRF · Aula ao vivo hoje</span>
       <div class="offer-list">
         <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Acesso à <b>aula ao vivo de hoje</b> (<span class="js-hoje">hoje</span>) com o Delegado Fábio</div>
-        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Ao final da aula: Arsenal Elite Federal + Raio-X PRF + Planilha Assuntos Ouro</div>
-        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Manual de Preparação PRF + Guia Prático do TAF</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Ao final da aula: Raio-X PRF + Arsenal Elite Federal + Guia Prático do TAF</div>
         <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="#2FD27A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Suporte para dúvidas durante a aula</div>
       </div>
-      <div class="price-old">Só em materiais: <s>R$ 640,00</s></div>
+      <div class="price-old">Só em materiais: <s>R$ 370,00</s></div>
       <div class="price"><span class="rs">R$</span>19<span class="cents">,90</span></div>
       <div class="price-sub">pagamento único · aula ao vivo hoje</div>
       <a href="https://pay.hub.la/sPZoheN2QGCFXAsdLG4J" data-checkout onclick="if(window.fbq)fbq('track','InitiateCheckout',{content_name:'pv03-oferta'});" class="btn btn-primary btn-lg">GARANTIR MEU INGRESSO — R$ 19,90 →</a>
